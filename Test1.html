@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Score Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        .navbar a {
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            margin-top: 2em;
+            background-color: white;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section img {
+            width: 40%;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 2em;
+        }
+        .section:nth-child(even) img {
+            order: 2;
+            margin-left: 2em;
+            margin-right: 0;
+        }
+        .team-score, .player-scores {
+            background-color: white;
+            padding: 1em;
+            margin-top: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .team-score h2, .player-scores h2, .section h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.5em;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        ul {
+            list-style-type: square;
+            margin-top: 1em;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Cricket Score Dashboard</h1>
+    </div>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Scores</a>
+        <a href="#">Teams</a>
+        <a href="#">Players</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="container">
+        <div class="team-score">
+            <h2>Team Scores</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLfJ0jraTQHWDqYAw1v5r04blk1JbjyMwi9taQOxCvlLl7KvRDTRUqbkX31ZmYUMnCDA&usqp=CAU" alt="Team Image" width="70" height="50">
+            <p>India: 250/7 (50 Overs)</p>
+            <p>Australia: 220/8 (50 Overs)</p>
+        </div>
+        <div class="player-scores">
+            <h2>Player Scores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Runs</th>
+                        <th>Balls</th>
+                        <th>4s</th>
+                        <th>6s</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Player 1</td>
+                        <td>85</td>
+                        <td>105</td>
+                        <td>7</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Player 2</td>
+                        <td>45</td>
+                        <td>60</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/International_Cricket_Council_%28logo%29.svg/1200px-International_Cricket_Council_%28logo%29.svg.png" alt="Cricket Image" width="100" height="70">
+            <p>The International Cricket Council (ICC) is the global governing body for international cricket, encompassing men's, women's and youth participation and competition. It is governed by the ICC Constitution.</p>
+        </div>
+        <div class="section">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/International_Cricket_Council_%28logo%29.svg/1200px-International_Cricket_Council_%28logo%29.svg.png" alt="Cricket Image" width="100" height="70">
+            <div>
+                <h2>Services Provided</h2>
+                <ul>
+                    <li>Live score updates</li>
+                    <li>Player statistics</li>
+                    <li>Match highlights</li>
+                    <li>Expert analysis</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Cricket Score Dashboard. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
