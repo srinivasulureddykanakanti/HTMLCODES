@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page with Box Model Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            border: 2px solid #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        .box {
+            padding: 20px;
+            margin: 10px;
+            background-color: #e0e0e0;
+            border: 2px solid #ccc;
+        }
+        .padding-box {
+            padding: 40px;
+            background-color: #d0d0f0;
+        }
+        .margin-box {
+            margin: 40px;
+            background-color: #f0d0d0;
+        }
+        .border-box {
+            border: 5px dashed #444;
+            background-color: #d0f0d0;
+        }
+        .content-box {
+            width: 50%;
+            height: 100px;
+            background-color: #f0e0d0;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Web Page with Box Model Properties</h1>
+    
+    <div class="container">
+        <h2>Box with Default Padding and Margin</h2>
+        <div class="box">
+            <p>This is a box with default padding and margin.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Box with Extra Padding</h2>
+        <div class="box padding-box">
+            <p>This box has extra padding of 40px.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Box with Extra Margin</h2>
+        <div class="box margin-box">
+            <p>This box has extra margin of 40px.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Box with Custom Border</h2>
+        <div class="box border-box">
+            <p>This box has a dashed border of 5px.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Box with Specified Content Area</h2>
+        <div class="box content-box">
+            <p>This box has a specified width and height for the content area.</p>
+        </div>
+    </div>
+
+</body>
+</html>
