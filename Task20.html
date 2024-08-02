@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page with Float Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            overflow: auto;
+        }
+        .box {
+            width: 45%;
+            padding: 20px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .clear {
+            clear: both;
+            padding: 10px;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Web Page with Float Properties</h1>
+    <div class="container">
+        <div class="box left">
+            <h2>Float Left</h2>
+            <p>This box is floated to the left. Floated elements are taken out of the normal document flow and shifted to the left.</p>
+        </div>
+        <div class="box right">
+            <h2>Float Right</h2>
+            <p>This box is floated to the right. Floated elements are taken out of the normal document flow and shifted to the right.</p>
+        </div>
+    </div>
+
+    <div class="clear">
+        <h2>Cleared Element</h2>
+        <p>This element uses the clear property to clear the floats above it, ensuring it appears below the floated elements.</p>
+    </div>
+
+</body>
+</html>
